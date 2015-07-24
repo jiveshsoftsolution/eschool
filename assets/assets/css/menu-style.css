@@ -1,0 +1,138 @@
+/* MENU */
+
+#nav {
+	float: left;
+	margin: 0; padding: 0;
+	background-color: #00A8E1;
+	border: 1px solid #0099CC;
+	border-bottom: none;
+	font: 100 14px/1.4 'Open Sans',Helvetica,Arial,sans-serif;
+	line-height: 15px;
+	border-radius:4px;
+}
+
+#nav li a, #nav li {
+ float: left;
+}
+
+#nav li {
+ list-style: none;
+ position: relative;
+}
+
+#nav li a {
+	color: #FFF;
+	background:#00A8E1;
+    display: block;
+    font: 100 14px/1.4 'Open Sans',Helvetica,Arial,sans-serif;
+    line-height: 15px;
+    padding: 10px 12px;
+    text-decoration: none;
+	text-align:left;
+	border-radius:2px;
+ /*background: #292929;
+ background: -moz-linear-gradient(top, black, #3c3c3c 1px, #292929 25px);
+ background: -webkit-gradient(linear, left top, left 25, from(black), color-stop(4%, #3c3c3c), to(#292929));
+ border:1px solid #0099CC;*/
+}
+
+#nav  li ul li a {
+	color: #FFF;
+    display: block;
+    font: 100 14px/1.4 'Open Sans',Helvetica,Arial,sans-serif;
+    line-height: 15px;
+    padding: 10px 12px;
+    text-decoration: none;
+	text-align:left;
+	border-left:1px solid #0099CC;
+	border-top:1px solid #0099CC;
+	border-right:1px solid #0099CC;
+	position:relative;
+	z-index:9999999;
+}
+
+#nav  > li ul li :last-child {
+	color: #FFF;
+    display: block;
+    font: 100 14px/1.4 'Open Sans',Helvetica,Arial,sans-serif;
+    line-height: 15px;
+    padding: 10px 12px;
+    text-decoration: none;
+	text-align:left;
+	border-left:1px solid #0099CC;
+	border-right:1px solid #0099CC;
+	border-top:0;
+	border-bottom:1px solid #0099CC;
+	position:relative;
+	z-index:9999999;
+}
+
+#nav  li ul li a:hover {
+	color: #000;
+    display: block;
+    font: 100 14px/1.4 'Open Sans',Helvetica,Arial,sans-serif;
+    line-height: 15px;
+    padding: 10px 12px;
+    text-decoration: none;
+	text-align:left;
+	position:relative;
+	z-index:9999999;
+}
+#nav > li a {
+    border-right: 1px solid #0099CC;
+	border-bottom: 1px solid #0099CC;
+}
+
+#nav li a:hover {
+ background: #FFF;
+ color:#222222;
+ border-radius:2px;
+ /*background: -moz-linear-gradient(top, #11032e, #2a0d65);
+ background: -webkit-gradient(linear, left top, left bottom, from(#11032e), to(#2a0d65));*/
+}
+
+
+/* Submenu */
+
+.hasChildren {
+	position: absolute;
+	width: 5px; height: 5px;
+	right : 0;
+	bottom: 0;
+}
+
+#nav li ul {
+ display: none;
+ position: absolute;
+ left: 0;
+ top: 100%;
+ padding: 0; margin: 0;
+}
+
+#nav li:hover > ul {
+ display: block;
+}
+
+#nav li ul li, #nav li ul li a {
+ float: none;
+}
+
+#nav li ul li {
+ _display: inline; /* for IE6 */
+}
+
+#nav li ul li a {
+ width: 150px;
+ display: block;
+}
+
+/* SUBSUB Menu */
+
+#nav li ul li ul {
+ display: none;
+}
+
+#nav li ul li:hover ul {
+ left: 100%;
+ top: 0;
+}
